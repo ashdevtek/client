@@ -27,4 +27,4 @@ NEXTAUTH_SECRET=ragasiyam
 NEXT_PUBLIC_API_URL=http://localhost:3000/
 AUTH_SECRET=
 
-```# client
+```

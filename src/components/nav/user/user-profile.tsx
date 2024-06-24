@@ -12,7 +12,7 @@ import { Button } from "../../ui/button";
 import { CircleUserRound } from "lucide-react";
 import UserCard from "./user-card";
 import LoginButton from "../../login/login-button";
-import SidebarTooltip from "../sdiebar-tooltip";
+import SidebarTooltip from "../sidebar-tooltip";
 
 interface UserProfileProps {
   session: Session | null;
@@ -27,7 +27,7 @@ const UserProfile = ({ session }: UserProfileProps) => {
         <Button
           variant="ghost"
           size="icon"
-          className="rounded-lg fill-foreground"
+          className="rounded-lg fill-foreground hover:border-2 hover:border-blue-500 hover:text-blue-600 dark:hover:text-white"
         >
           <CircleUserRound className="size-5" />
         </Button>

@@ -25,7 +25,7 @@ const SidebarButton = ({
           <Button
             variant="ghost"
             size="icon"
-            className="rounded-lg fill-foreground"
+            className="rounded-lg fill-foreground hover:border-2 hover:border-blue-500 hover:text-blue-600 dark:hover:text-white"
             asChild
           >
               {link ? <Link href={link}><Icon className="size-5" /></Link> : <Icon className="size-5" />}

@@ -29,15 +29,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body className="h-screen">
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
-          <SideBar />
-          <main>{children}</main>
+          <div className="flex flex-row h-screen">
+            <div><SideBar /></div>
+            <main className="flex-1 overflow-hidden">
+              {children}
+            </main>
+          </div>
         </ThemeProvider>
       </body>
     </html>

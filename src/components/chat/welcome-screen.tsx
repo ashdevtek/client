@@ -8,8 +8,7 @@ const WelcomeScreen = () => {
         Hey there! 👋 Docusage is here to lend a hand.
         </h1>
         <p className="leading-normal text-muted-foreground">
-            Step into the realm of possibilities with your trusty chat bot! From troubleshooting to trivia, I'm equipped to handle it all.
-            Send your query my way, and let's make magic happen!
+        Tired of endless scrolling and skimming?  Don't worry, I'm a whiz at digging through documents!  I can summarize the main points, pull out specific data, or help you find that needle in a haystack. Let's make your document tasks a breeze!
         </p>
       </div>
     </div>
