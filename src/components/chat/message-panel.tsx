@@ -22,8 +22,9 @@ interface Props extends TextareaHTMLAttributes<HTMLTextAreaElement> {
 }
 
 const MessagePanel = forwardRef<HTMLTextAreaElement, Props>(
+  // eslint-disable-next-line react/display-name
   ({ value, disabled, onChange, onSubmit }, ref) => {
-    const handleKeyDown = (e: KeyboardEvent<HTMLTextAreaElement>) => {
+    const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
       // Check if the Enter key (key code 13) was pressed
       if (e.key === "Enter" && !e.shiftKey) {
         e.preventDefault(); // Prevent default behavior (e.g., new line)
@@ -79,4 +80,15 @@ const MessagePanel = forwardRef<HTMLTextAreaElement, Props>(
   }
 );
 
+MessagePanel.displayName = "MessagePanel";
+
 export default MessagePanel;
+
+
+
+
+
+
+
+
+

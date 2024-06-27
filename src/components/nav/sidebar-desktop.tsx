@@ -17,7 +17,7 @@ const SidebarDesktop = ({ session }: SidebarProps) => {
   return (
     <aside className="inset-y fixed left-0 z-20 flex h-full flex-col border-r">
       <div className="p-2">
-        <Button variant="outline" size="icon" aria-label="Home">
+        <Button variant="outline" size="icon" aria-label="Home" className="hover:border-2 hover:border-red-500">
           <img
             src="/icon_light.svg"
             className="hidden dark:block size-5 fill-foreground"

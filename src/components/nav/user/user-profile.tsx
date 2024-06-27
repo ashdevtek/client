@@ -27,7 +27,7 @@ const UserProfile = ({ session }: UserProfileProps) => {
         <Button
           variant="ghost"
           size="icon"
-          className="rounded-lg fill-foreground hover:border-2 hover:border-blue-500 hover:text-blue-600 dark:hover:text-white"
+          className="rounded-lg fill-foreground hover:border-2 hover:border-red-500 hover:text-red-600 dark:hover:text-white"
         >
           <CircleUserRound className="size-5" />
         </Button>

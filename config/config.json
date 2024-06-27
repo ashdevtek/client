@@ -1,0 +1,25 @@
+{
+  "debounce_delay": 75,
+  "exampleMessages": [
+    {
+      "heading": "Summarize",
+      "subheading": "the main points of these documents.",
+      "message": "Summarize the main points of these documents."
+    },
+    {
+      "heading": "Generate",
+      "subheading": "all the major insights from this data.",
+      "message": "What are the major insights from this data?"
+    },
+    {
+      "heading": "Extract",
+      "subheading": "all references to 'AWS' from these reports.",
+      "message": "Extract all references to 'AWS' from these reports."
+    },
+    {
+      "heading": "Identify",
+      "subheading": "the top keywords in this document set.",
+      "message": "Identify the top keywords in this document set."
+    }
+  ]
+}

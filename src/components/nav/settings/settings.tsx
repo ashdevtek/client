@@ -4,9 +4,15 @@ import React from "react";
 import { Switch } from "@/components/ui/switch";
 import SidebarTooltip from "../sidebar-tooltip";
 import GenericDialog from "@/components/ui/custom-dialog";
+import { useTheme } from "next-themes";
 
 const Settings = () => {
   const [open, setOpen] = React.useState(false);
+  const { theme, setTheme } = useTheme();
+
+  const handleThemeToggle = (checked: boolean) => {
+    setTheme(checked ? "dark" : "light");
+  };
 
   return (
     <GenericDialog
@@ -19,7 +25,7 @@ const Settings = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="rounded-lg fill-foreground hover:border-2 hover:border-blue-500 hover:text-blue-600 dark:hover:text-white"
+            className="rounded-lg fill-foreground hover:border-2 hover:border-red-500 hover:text-red-600 dark:hover:text-white"
           >
             <Settings2 className="size-5" />
           </Button>
@@ -27,6 +33,17 @@ const Settings = () => {
       }
     >
       <div className="mt-8 space-y-4">
+        <div className="flex items-center justify-between">
+          <div>
+            <h3 className="text-md font-semibold text-slate-700">Dark Mode</h3>
+            <p className="text-xs">Toggle between light and dark themes.</p>
+          </div>
+          <Switch
+            id="dark-mode"
+            checked={theme === "dark"}
+            onCheckedChange={handleThemeToggle}
+          />
+        </div>
         <div className="flex items-center justify-between">
           <div>
             <h3 className="text-md font-semibold text-slate-700">Notifications</h3>
@@ -48,9 +65,6 @@ const Settings = () => {
           </div>
           <Switch id="enable-skynet" />
         </div>
-      </div>
-      <div className="flex justify-center w-full mt-4">
-        <Button> Save preferences </Button>
       </div>
     </GenericDialog>
   );

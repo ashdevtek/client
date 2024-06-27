@@ -32,8 +32,7 @@ export default function RootLayout({
       <body className="h-screen">
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
-          enableSystem
+          defaultTheme="light"
           disableTransitionOnChange
         >
           <div className="flex flex-row h-screen">

@@ -2,12 +2,12 @@ FROM node:18-alpine AS base
 
 WORKDIR /app
 
-COPY package.json package-lock.json ./
+COPY package.json package-lock.json config public ./
 
 RUN npm install
 
-COPY . .
+ADD .next .next
 
 EXPOSE 3000
 
-CMD npm run dev
+CMD ["npm", "start"]
